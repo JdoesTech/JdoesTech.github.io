@@ -17,36 +17,28 @@ code, .skill-item {
   font-family: 'Fira Code', monospace;
 }
 
-/* Accessible visually hidden utility for the checkbox */
 .visually-hidden {
   position: absolute !important;
   width: 1px; height: 1px;
   padding: 0; margin: -1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  white-space: nowrap; /* prevent line breaks */
+  white-space: nowrap; 
   border: 0;
 }
 
-.theme-toggle-checkbox {
-    /* still present in DOM for :has() */
-}
-
-/* Show focus outline on the visible label when the hidden checkbox is focused */
 .theme-toggle-checkbox:focus-visible + .theme-toggle {
   outline: 3px solid #00f7ff;
   outline-offset: 3px;
 }
 
-/* Global light theme using :has() so it affects entire page */
 html:has(#theme-toggle:checked) body {
   background: #e0f7fa;
-  color: #0a1a2b;
+  color: #163455;
 }
 
-/* Component overrides in light theme */
 html:has(#theme-toggle:checked) header {
-  background: #002500;
+  background: #028b02; 
   border-color: #32CD32;
   box-shadow: 0 0 10px #32CD32;
 }
@@ -64,7 +56,6 @@ header {
     min-height: 100vh; /* full-viewport hero */
 }
 
-/* Responsive hero typography */
 header h1 {
   font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
   line-height: 1.15;
@@ -172,7 +163,8 @@ html:has(#theme-toggle:checked) .container section {
 
 html:has(#theme-toggle:checked) .container .skill-item,
 html:has(#theme-toggle:checked) .container .project-item {
-    background: #002500;
+    background: #0077b6;
+    /* #028b02 */
     border-color: #0077b6;
     box-shadow: 0 0 10px #0077b6;
 }
