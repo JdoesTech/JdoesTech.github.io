@@ -53,7 +53,7 @@ header {
     gap: 2rem;
     border-bottom: 2px solid #32CD32;
     box-shadow: 0 0 10px #32CD32;
-    min-height: 100vh; /* full-viewport hero */
+    min-height: 100vh; 
 }
 
 header h1 {
@@ -114,6 +114,17 @@ nav a {
     color: #00f7ff;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a.active{
+    background-color: #028b02;
+    text-decoration: underline;
+    color : black;
+}
+
+nav a:hover{
+    color : black;
+    background-color: grey;
 }
 
 html:has(#theme-toggle:checked) nav a {
