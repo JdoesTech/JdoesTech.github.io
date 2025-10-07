@@ -4,27 +4,33 @@
     <meta name="description" content="This is a portfolio website for a software developer who is looking for internship roles, showcasing himself">
     <meta name=" keywords" content="portfolio, website, software, developer, internship, roles">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geoffrey Onyango - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox visually-hidden" aria-label="Toggle color theme">
-    <label for="theme-toggle" class="theme-toggle">Switch Colours</label>
-    <header>
-        <img src="assets/profilePic.jpg" alt="Profile Picture" class="profile-pic">
-        <div>
-            <h1>Geoffrey Onyango</h1>
-            <p>Software Developer || Tech Policy Enthusiast</p>
-            <p>CyberThreat Analysis || Machine Learning || Data Science</p>
-            <p>Student in Training || Open to Internships</p>
+    <label for="theme-toggle" class="theme-toggle">
+        <span class="visually-hidden">Switch Colours</span>
+    </label>
+    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+
+    <header id="home">
+        <div class="header-content">
+            <img src="assets/profilePic.jpg" alt="Geoffrey Onyango's profile picture" class="profile-pic">
+            <div>
+                <h1>Geoffrey Onyango</h1>
+                <p>Software Developer || Tech Policy Enthusiast</p>
+                <p>CyberThreat Analysis || Machine Learning || Data Science</p>
+                <p>Student in Training || Open to Internships</p>
+            </div>
         </div>
     </header>
 
     <nav>
         <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
@@ -34,83 +40,101 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <section id="about">
+    <main class="container">
+        <section id="about" class="fade-in">
             <h2>About Me</h2>
-            <p>I'm a passionate software developer with a knack for creating user-friendly, innovative solutions. My drive comes from solving complex problems and continuously learning new technologies to build impactful applications.</p>
+            <p>Hey there! I'm Geoffrey, a passionate software developer who's all about turning complex problems into elegant, user-friendly solutions. Whether it's crafting secure web apps or diving into the world of AI and data science, I thrive on learning and innovating. When I'm not coding, you'll find me exploring tech policy or contributing to open-source projects that make a real impact. Let's connect and build something amazing together!</p>
         </section>
 
-        <section id="skills">
-            <h2>Programming Languages</h2>
+        <section id="skills" class="fade-in">
+            <h2>Skills</h2>
             <div class="skills-grid">
-                <div class="skill-item">HTML</div>
-                <div class="skill-item">CSS</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">Rust</div>
-                <div class="skill-item">Java</div> 
+                <div class="skill-item">
+                    <span>HTML</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>CSS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Rust</span>
+                    <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Java</span>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
             </div>
         </section>
 
-        <section id="education">
+        <section id="education" class="fade-in">
             <h2>Educational Background</h2>
-            <p>Bachelor of Science in Computer Science<br>
-               Daystar University, 2021-2025<br>
-               Relevant Coursework: Web & Mobile Development, Data Structures & Algorithms, Database Systems
-                                    Low Level Programming (C, Java and Rust), Artificial intelligence & Neural Networks
-                                    Continuous Integration and Continuous Delivery, Machine Learning, CyberThreat Analysis
-            </p>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Daystar University, 2021-2025</p>
+            <p>Relevant Coursework: Web & Mobile Development, Data Structures & Algorithms, Database Systems, Low Level Programming (C, Java and Rust), Artificial Intelligence & Neural Networks, Continuous Integration and Continuous Delivery, Machine Learning, CyberThreat Analysis</p>
             <a href="https://drive.google.com/file/d/1r5npDhmKEsRtneKk5xbRg8dGoBa_PU5w/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cv-download" download>Explore My CV</a>
         </section>
 
-        <section id="interests">
+        <section id="interests" class="fade-in">
             <h2>Interests</h2>
-            <p>I'm excited about web technologies, mobile development, cloud computing, data science and artificial intelligence. I enjoy exploring new frameworks, building responsive designs, and contributing to open-source projects that make a difference.</p>
+            <p>I'm thrilled by the endless possibilities in web technologies, mobile development, cloud computing, data science, and artificial intelligence. I love tinkering with new frameworks, designing responsive UIs, and collaborating on open-source initiatives that drive positive change.</p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="fade-in">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-item">
                     <h3>Private Repo1</h3>
-                    <p>A private repository exploring scripting algorithms </p>
-                    <a href="https://github.com/JdoesTech/NursingScripts" target="_blank">View Project</a>
+                    <p>A private repository exploring scripting algorithms</p>
+                    <a href="https://github.com/JdoesTech/repo1" target="_blank">View Project</a>
                 </div>
                 <div class="project-item">
                     <h3>Private Repo 2</h3>
                     <p>Practical assignments exploring different languages</p>
-                    <a href="https://github.com/JdoesTech/Practicals" target="_blank">View Project</a>
+                    <a href="https://github.com/JdoesTech/repo2" target="_blank">View Project</a>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="fade-in">
             <h2>Contact Me</h2>
             <div class="contact-links">
-                <a href="mailto:ojeffrey719@gmail.com" target="_blank">
-                    <i class="fas fa-envelope"></i> Email
+                <a href="mailto:ojeffrey@gmail.com">
+                    <img src="https://via.placeholder.com/50?text=Email" alt="Email Icon">
+                    Email
                 </a>
-                <a href="https://github.com/JdoesTech" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub
+                <a href="https://github.com/JdoesTech" target="_blank">
+                    <img src="https://via.placeholder.com/50?text=GitHub" alt="GitHub Icon">
+                    GitHub
                 </a>
-                <a href="https://linkedin.com/in/hardyonyango" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i> LinkedIn
+                <a href="https://linkedin.com/in/hardyonyango" target="_blank">
+                    <img src="https://via.placeholder.com/50?text=LinkedIn" alt="LinkedIn Icon">
+                    LinkedIn
                 </a>
             </div>
-            <form>
+            <form id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            <p id="form-message"></p>
         </section>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Geoffrey Onyango. All rights reserved.</p>
+        <p>© 2025 Geoffrey Onyango. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
