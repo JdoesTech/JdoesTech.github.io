@@ -36,9 +36,7 @@ Edit
 /
 ├── index.html            # Main HTML page
 ├── style.css             # Custom styling
-├── assets/
-│   ├── profilePic.jpg    # Profile image
-│   └── cv2-7_2025.pdf    # Downloadable CV
+├── assets/               # Media required
 🌐 Live Preview
 View Portfolio on GitHub Pages
 https://JdoesTech.github.io
