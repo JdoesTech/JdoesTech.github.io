@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #e0f7fa;
-    background: #001f3f; /* Dark navy blue */
+    background: #001f3f;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -28,7 +28,7 @@ code, .skill-item {
 }
 
 .theme-toggle-checkbox:focus-visible + .theme-toggle {
-    outline: 3px solid #00ff00; /* Luminous green */
+    outline: 3px solid #00ff00;
     outline-offset: 3px;
 }
 
@@ -38,20 +38,20 @@ html:has(#theme-toggle:checked) body {
 }
 
 html:has(#theme-toggle:checked) header {
-    background: #228b22; /* Forest green */
-    border-color: #32cd32; /* Lime green */
+    background: #228b22;
+    border-color: #32cd32;
     box-shadow: 0 0 10px #32cd32;
 }
 
 header {
-    background: #002b57; /* Deep blue */
+    background: #002b57;
     padding: 4rem 2rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border-bottom: 2px solid #4169e1; /* Royal blue */
+    border-bottom: 2px solid #4169e1;
     box-shadow: 0 0 15px #4169e1;
     min-height: 20vh;
 }
@@ -77,7 +77,7 @@ header p {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    border: 3px solid #32cd32; /* Luminous green */
+    border: 3px solid #32cd32;
     box-shadow: 0 0 15px #32cd32;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -97,10 +97,10 @@ h1, h2, h3 {
 }
 
 nav {
-    background: #001845; /* Dark blue */
+    background: #001845;
     padding: 1rem;
     text-align: center;
-    border-bottom: 2px solid #00ff00; /* Luminous green */
+    border-bottom: 2px solid #00ff00;
     box-shadow: 0 0 10px #00ff00;
     position: sticky;
     top: 0;
@@ -108,7 +108,7 @@ nav {
 }
 
 html:has(#theme-toggle:checked) nav {
-    background: #003300; /* Dark green */
+    background: #003300;
     border-color: #4169e1;
     box-shadow: 0 0 10px #4169e1;
 }
@@ -122,7 +122,7 @@ nav ul {
 }
 
 nav a {
-    color: #4169e1; /* Royal blue */
+    color: #4169e1;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -130,7 +130,7 @@ nav a {
 
 nav a.active {
     text-decoration: underline;
-    color: #00ff00; /* Luminous green */
+    color: #00ff00;
 }
 
 nav a:hover {
@@ -155,7 +155,7 @@ section {
     margin-bottom: 4rem;
     padding: 2rem;
     border-radius: 12px;
-    background: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
+    background: rgba(0, 31, 63, 0.8);
     border: 1px solid #4169e1;
     box-shadow: 0 0 12px #4169e1;
     opacity: 0;
@@ -169,14 +169,14 @@ section.visible {
 }
 
 html:has(#theme-toggle:checked) .container section {
-    background: rgba(34, 139, 34, 0.1); /* Light green tint */
+    background: rgba(34, 139, 34, 0.1);
     border-color: #32cd32;
     box-shadow: 0 0 12px #32cd32;
 }
 
-.skills-grid, .projects-grid {
+.skills-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
@@ -222,6 +222,13 @@ html:has(#theme-toggle:checked) .progress-bar {
 html:has(#theme-toggle:checked) .progress {
     background: linear-gradient(90deg, #32cd32, #4169e1);
 }
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 1.5rem;
+}
+
 
 .project-item {
     background: #002b57;
@@ -474,6 +481,15 @@ html:has(#theme-toggle:checked) footer {
         flex-direction: column;
         text-align: center;
     }
+    
+    .profile-pic {
+        width: 220px;
+        height: 220px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -486,8 +502,8 @@ html:has(#theme-toggle:checked) footer {
         padding: 2rem 1rem;
     }
 
-    .skills-grid, .projects-grid {
-        grid-template-columns: 1fr;
+    .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     header {
@@ -509,6 +525,10 @@ html:has(#theme-toggle:checked) footer {
     header h1 {
         font-size: 2rem;
     }
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
 
     header p {
         font-size: 1rem;
@@ -517,4 +537,8 @@ html:has(#theme-toggle:checked) footer {
     section {
         padding: 1.5rem;
     }
+
+    .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
 }
